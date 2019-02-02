@@ -10,7 +10,7 @@
                 background : '#000',
                 color : '#fff'
              },
-            showLogs : false //是否在window的logPag下存储清除掉的记录信息
+            hideLogs : false //是否在window的logPag下存储清除掉的记录信息
          })
 
 ### 只保留最后一句打印语句
@@ -59,7 +59,7 @@
 
      Log({
         unique : true,
-        showLog : true , //false则隐藏log记录， true放开
+        hideLogs : true , //false则隐藏log记录， true放开
      })
 
      console.log('hide thing.')

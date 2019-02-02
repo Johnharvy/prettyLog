@@ -7,15 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <script  src = "./log.js"></script>
+    <script  src = "../prettyLog.js"></script>
     <script>
          Log({
-             unique : true,
-             showLogs : true , //false则隐藏log记录， true放开
-         })
-         console.log('hide thing.')
-         console.log('John')
-         console.info(window.LogPag)
+            unique : true,
+            log : {
+                    fontSize : '18px',
+                    background : '-webkit-linear-gradient(right, rgba(59,187,189,1) 0%, rgba(59,187,189,0.25) 100%)',
+                    color : '#fff',
+                    padding : '5px 10px',
+                    height : '20px'  
+                },
+             })
+         console.log('Johnharvy','johnharvy')
     </script>
     
 </body>

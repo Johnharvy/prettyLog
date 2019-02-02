@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script  src = "../prettyLog.js"></script>
+    <script>
+         Log({
+       unique : true,  //是否打开只显示最后一条或者最后一组的打印语句
+       log : {         // 为log打印的语句设置样式
+            fontSize : '18px', 
+            background : '#000',
+            color : '#fff'
+         },
+        hideLogs : false //是否在window的logPag下存储清除掉的记录信息
+     })
+     console.log('john')
+    </script>
+    
+</body>
+</html>
