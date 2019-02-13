@@ -1,6 +1,6 @@
 {
   "name": "ptlog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "> 你是否曾经为混乱而冗杂的打印语句而怒过，又或者想要轻松控制打印语句的开启与关闭，又或者想要美化控制台的打印语句样式，那么prettyLog.js将解决你的烦恼。",
   "main": "./dist/min/prettyLog.min.js",
   "directories": {

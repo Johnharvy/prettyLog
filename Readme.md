@@ -12,6 +12,8 @@
     npm i ptlog
 
 ### 怎么使用
+   
+ ####  脚本链接引入
 
     Log({
            unique : true,  //是否打开只显示最后一条或者最后一组的打印语句
@@ -22,6 +24,23 @@
              },
             hideLogs : false //是否在window的logPag下存储清除掉的记录信息
          })
+
+ #### 第三方模块引入
+
+    import Log from 'ptlog'
+
+    Log({
+            hideLogs : false,
+            unique : true,
+            log : {
+                    fontSize : '18px',
+                    background : '-webkit-linear-gradient(right, rgba(59,187,189,1) 0%, rgba(59,187,189,0.25) 100%)',
+                    color : '#fff',
+                    padding : '5px 10px',
+                    height : '20px'  
+                },
+        })
+     
 
 ### 只保留最后一句打印语句
 >所有通过console.log打印的语句,都会有跟随的标识,默认是localeTimeString.
