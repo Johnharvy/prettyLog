@@ -5,13 +5,12 @@
     } else if (typeof define === 'function' && define.amd) { //如果存在异步加载defined
         define([], factory)
     } else root.Log = factory() //全局环境下
-})(this, function () {
-    const that = this
-    let _window = this.constructor.name === "Window" ? window : ''
-    if (!_window) {
+})(window, function () {
+    if (!window || !window.console) {
         console.warn('暂不支持非浏览器环境！');
         return;
     }
+    const that = window
     /**
      * 
      *  这里应该返回Log的原型，同时当Log实例化时传进参数
@@ -24,9 +23,9 @@
         warn: '',
         error: '',
     }
-    this.LogPag = {}
-    this.group_start = false //group开始状态标记
-    this.group_end = false //group终止状态结束
+    window.LogPag = {}
+    window.group_start = false //group开始状态标记
+    window.group_end = false //group终止状态结束
 
     /**
      * the Main Funtion
@@ -55,7 +54,7 @@
      *  捕捉window加载完成时所有记录，取最后一组展示
      */
     function logEndGroup(callback) {
-        const that = this
+        const that = window
         //log方法调用
         console.log = function (any, mark = new Date().toLocaleTimeString()) {
             //group状态开启

@@ -25,5 +25,8 @@ gulp.task('transform', function() {
 gulp.task('default',['transform'], function() {
    return gulp.src('dist/prettyLog.js')
         .pipe(uglify())
+        .pipe(rename(
+            'prettyLog.min.js'
+         ))
         .pipe(gulp.dest('dist/min'));
 });
