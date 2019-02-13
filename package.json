@@ -1,0 +1,34 @@
+{
+  "name": "ptlog",
+  "version": "1.0.0",
+  "description": "> 你是否曾经为混乱而冗杂的打印语句而怒过，又或者想要轻松控制打印语句的开启与关闭，又或者想要美化控制台的打印语句样式，那么prettyLog.js将解决你的烦恼。",
+  "main": "./dist/min/prettyLog.min.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "gulp-babel": "^8.0.0",
+    "gulp": "^3.9.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johnharvy/prettyLog.git"
+  },
+  "keywords": [
+    "log"
+  ],
+  "author": "xingyu <john.zhu@ly.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Johnharvy/prettyLog/issues"
+  },
+  "homepage": "https://github.com/Johnharvy/prettyLog#readme"
+}

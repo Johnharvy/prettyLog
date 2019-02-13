@@ -1,6 +1,16 @@
 ## 控制台的垃圾清理人员 —— prettyLog.js
 > 你是否曾经为混乱而冗杂的打印语句而怒过，又或者想要轻松控制打印语句的开启与关闭，又或者想要美化控制台的打印语句样式，那么prettyLog.js将解决你的烦恼。
 
+### 安装
+
+   ####  通过https请求引入
+
+    <script src = "https://file.40017.cn/pinche/public/prettyLog.min.js"></script> 
+
+   #### 通过npm安装
+
+    npm i ptlog
+
 ### 怎么使用
 
     Log({
