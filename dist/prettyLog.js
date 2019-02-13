@@ -25,7 +25,7 @@
 
   var options = {
     name: 'Log',
-    showLogs: true,
+    hideLogs: false,
     //是否显示打印信息
     unique: false,
     //是否只展示最后一组或者一条记录

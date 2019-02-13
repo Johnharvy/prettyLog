@@ -17,7 +17,7 @@
      */
     let options = {
         name: 'Log',
-        showLogs: true, //是否显示打印信息
+        hideLogs: false, //是否显示打印信息
         unique: false, //是否只展示最后一组或者一条记录
         log: null, //配置log的展示选项，例如 {color : 'blue', background : #000, fontSize : '20px'}
         warn: '',
@@ -37,6 +37,7 @@
         if (options.unique) logEndGroup();
         /* showLogs关闭时，将不再window下LogPag下保存打印的记录信息 */
         if (options.hideLogs) reLog();
+       
     }
 
     /**
